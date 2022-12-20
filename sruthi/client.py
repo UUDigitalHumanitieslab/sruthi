@@ -73,7 +73,7 @@ class DataLoader(object):
         diag = '{http://www.loc.gov/zing/srw/diagnostic/}'
         diagnostics = self.xmlparser.find(
             xml,
-            f'{sru}diagnostics/{diag}diagnostic'
+            '{}diagnostics/{}diagnostic'.format(sru, diag)
         )
         if diagnostics:
             error_msg = ", ".join([d.text for d in diagnostics])
