@@ -1,6 +1,6 @@
 import re
 from xml.etree.ElementTree import Element
-import defusedxml.ElementTree as etree
+import xml.etree.ElementTree as etree
 import xmltodict
 from . import errors
 
